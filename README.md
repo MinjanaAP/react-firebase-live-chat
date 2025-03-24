@@ -1,109 +1,70 @@
-# React Firebase Live Chat with Push Notifications
+# Getting Started with Create React App
 
-🚀 A real-time **Live Chat** application built with **React** and **Firebase**, featuring **Google Authentication**, **Firestore for messages**, and **Push Notifications** using Firebase Cloud Messaging (FCM).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Live Chat Preview](https://your-image-link.com) *(Replace with actual image link)*
+## Available Scripts
 
----
+In the project directory, you can run:
 
-## **📢 Features**
-✅ Google Login Authentication  
-✅ Real-time messaging using Firestore  
-✅ Push Notifications using Firebase Cloud Messaging (FCM)  
-✅ Responsive and modern UI  
-✅ Typing status indicator  
-✅ User presence detection  
+### `npm start`
 
----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## **🚀 Getting Started**
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### **1️⃣ Clone the Repository**
-```bash
-git clone https://github.com/MinjanaAP/react-firebase-live-chat.git
-cd react-firebase-live-chat
-```
+### `npm test`
 
-### **2️⃣ Install Dependencies**
-```bash
-npm install
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### **3️⃣ Setup Firebase**
-1. Go to the [Firebase Console](https://console.firebase.google.com/).  
-2. Create a new project and enable Firestore, Authentication, and Cloud Messaging (FCM).  
-3. Get your Firebase config and add it to a `.env` file:  
+### `npm run build`
 
-```env
-REACT_APP_API_KEY=your_api_key
-REACT_APP_AUTH_DOMAIN=your_auth_domain
-REACT_APP_PROJECT_ID=your_project_id
-REACT_APP_STORAGE_BUCKET=your_storage_bucket
-REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
-REACT_APP_APP_ID=your_app_id
-```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## **📡 Firebase Configuration**
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### **🔹 Authentication (Google Sign-In)**
-1. Enable **Google Authentication** in Firebase Console.  
-2. Install Firebase in the project:  
-   ```bash
-   npm install firebase
-   ```
+### `npm run eject`
 
-### **🔹 Firestore Database (Real-time Messages)**
-1. Create a `messages` collection in Firestore.  
-2. Add a document structure like:  
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-```json
-{
-    "senderId": "user123",
-    "receiverId": "user456",
-    "message": "Hello!",
-    "timestamp": 1742806163
-}
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### **🔹 Firebase Cloud Messaging (Push Notifications)**
-1. Enable Firebase Cloud Messaging (FCM).  
-2. Add your FCM **Server Key** to Firebase Functions.  
-3. Implement the **service worker** for push notifications.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
----
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## **🔥 Running the App**
-```bash
-npm start
-```
-Open **http://localhost:5173/** in your browser.
+## Learn More
 
----
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## **🚀 Deploying to Firebase Hosting**
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init
-firebase deploy
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
----
+### Code Splitting
 
-## **📄 Blog Post & Documentation**
-Read the full step-by-step guide: **[Insert Blog Link]**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
----
+### Analyzing the Bundle Size
 
-## **🤝 Contributing**
-Feel free to fork this repository, submit issues, and create pull requests!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
----
+### Making a Progressive Web App
 
-## **📜 License**
-This project is **open-source** under the **MIT License**.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
----
+### Advanced Configuration
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
